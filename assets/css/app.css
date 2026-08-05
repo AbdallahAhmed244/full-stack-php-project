@@ -1,0 +1,84 @@
+:root {
+  --kc-primary: #0b5ed7;
+  --kc-primary-dark: #084298;
+  --kc-bg: #f4f7fb;
+  --kc-sidebar: #0a3d7a;
+  --kc-card: #ffffff;
+  --kc-text: #1a2b3c;
+  --kc-muted: #6c757d;
+}
+
+body {
+  font-family: "Cairo", system-ui, sans-serif;
+  background: var(--kc-bg);
+  color: var(--kc-text);
+}
+
+.kc-auth-body {
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at top right, rgba(11, 94, 215, 0.12), transparent 40%),
+    linear-gradient(180deg, #eef4fb 0%, var(--kc-bg) 55%);
+}
+
+.kc-brand-link {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--kc-primary-dark);
+}
+
+.kc-auth-card {
+  border: 0;
+  box-shadow: 0 0.5rem 1.5rem rgba(10, 61, 122, 0.08);
+  border-radius: 1rem;
+}
+
+.kc-sidebar {
+  background: linear-gradient(180deg, var(--kc-sidebar), var(--kc-primary-dark));
+  min-height: 100vh;
+}
+
+.kc-sidebar .nav-link {
+  color: rgba(255, 255, 255, 0.85);
+  border-radius: 0.5rem;
+  text-decoration: none;
+}
+
+.kc-sidebar .nav-link:hover,
+.kc-sidebar .nav-link.active {
+  background: rgba(255, 255, 255, 0.15);
+  color: #fff;
+}
+
+.kc-sidebar .btn-link {
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.kc-sidebar .btn-link:hover {
+  color: #fff;
+}
+
+.kc-brand {
+  font-weight: 700;
+  color: #fff;
+}
+
+.kc-topbar {
+  background: var(--kc-card);
+  border-bottom: 1px solid #e6edf5;
+}
+
+.card {
+  border: 0;
+  box-shadow: 0 0.25rem 0.75rem rgba(10, 61, 122, 0.06);
+}
+
+.btn-primary {
+  background-color: var(--kc-primary);
+  border-color: var(--kc-primary);
+}
+
+.btn-primary:hover {
+  background-color: var(--kc-primary-dark);
+  border-color: var(--kc-primary-dark);
+}
